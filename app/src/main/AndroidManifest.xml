@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oso.nuevaiotmx">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-feature android:name="android.hardware.wifi" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission  android:name="android.permission.INTERNET"></permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".views.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Login"
+            android:label=""
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.NewAccount"
+            android:label=""
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".views.Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.NewAccount" />
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name=".views.Account"
+        android:label=""
+        android:theme="@style/AppTheme2"
+            android:parentActivityName=".views.Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.Account" />
+        <intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".views.Maincontrol"
+            android:label="Inicio"
+            android:theme="@style/AppTheme2"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Settings"
+            android:label="Settings"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".views.Maincontrol">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.NewAccount" />
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Devices"
+            android:label="Devices"
+            android:theme="@style/AppTheme2"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name=".views.Iotmx"
+        android:label="IOTMX"
+        android:theme="@style/AppTheme2"
+        android:parentActivityName=".views.Maincontrol"
+        >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".views.NewAccount" />
+        <intent-filter>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".views.ActivityDiscovery"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+
+
+        <activity
+            android:name=".views.Rooms"
+            android:label="Rooms"
+            android:theme="@style/AppTheme2"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Houses"
+            android:label="Houses"
+            android:theme="@style/AppTheme2"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Profile"
+            android:label="Profile"
+            android:theme="@style/AppTheme2"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Users"
+            android:label="Users"
+            android:theme="@style/AppTheme2"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Programming"
+            android:label="Programming"
+            android:theme="@style/AppTheme2"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        CompartirTweet about this on TwitterShare on Tumblr
+    </application>
+
+</manifest>

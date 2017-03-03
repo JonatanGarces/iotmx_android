@@ -1,0 +1,57 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+
+   <ImageView
+       android:layout_width="300dp"
+       android:layout_height="100dp"
+       android:src="@drawable/logo"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="20dp"
+       android:id="@+id/imagen1"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/imagen1"
+       android:gravity="center"
+       android:layout_marginLeft="70dp"
+       android:layout_marginTop="100dp"
+       android:text="Create new IOTMX account"
+       android:id="@+id/crearcuenta"
+       android:onClick="crearcuenta"
+       android:background="#ffffff"
+       android:textColor="#8A0808"
+       android:textStyle="bold"
+       android:layout_centerHorizontal="true"
+       />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/crearcuenta"
+       android:layout_marginTop="20dp"
+       android:gravity="center"
+       android:layout_marginLeft="70dp"
+       android:text="Cuenta existente IOTMx"
+       android:id="@+id/cuentaexistente"
+       android:onClick="cuentaexistente"
+       android:background="#ffffff"
+       android:textColor="#8A0808"
+       android:textStyle="bold"
+       android:layout_centerHorizontal="true"
+       />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/salir"
+       android:layout_below="@id/cuentaexistente"
+       android:layout_marginLeft="140dp"
+       android:layout_marginTop="130dp"
+       android:text="QUIT"
+       android:onClick="salir"
+       android:background="#ffffff"
+       android:textColor="#8A0808"
+       android:textStyle="bold"
+       />
+</RelativeLayout>
